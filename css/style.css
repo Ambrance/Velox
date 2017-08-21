@@ -1,0 +1,119 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: OpenSans, Arial, sans-serif;
+    background-color: #3b404c; 
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid #000;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-header {
+    background: #3b404c url("../img/bg.jpg") no-repeat;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 150px;
+    min-height: 710px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.header-top {
+    display: table;
+}
+
+.logo,
+.header-nav {
+    display: table-cell;
+    vertical-align: middle;
+    outline: 1px dashed black;
+    height: 90px;
+    text-align: left;
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.header-nav li {
+    display: inline-block;
+}
+
+.header-nav a {
+    display: block;
+    padding: 3px 28px;
+    opacity: 0.69;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+}
+.header-nav a:hover {
+    text-decoration: underline;
+}
+.header-nav a:active {
+    color: #3b404c;
+}
+
+.header-nav li:last-child a {
+    padding-right: 0;
+} 
+
+.page-header .title {
+    text-align: center;
+    font-family: Lora,'Times New Roman', serif; 
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 23px;
+    margin: 195px 0 90px;
+}
+
+.page-header .desc {
+    font-family: Open Sans, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 23px;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    text-align: center;
+    background-color: #00a5ff;
+    border-radius: 36px;
+    -webkit-box-shadow: 0 2px 4.8px 0.3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 2px 4.8px 0.3px rgba(0, 0, 0, 0.25);
+}
+.header-btn {
+    padding: 25px 50px 25px 70px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.btn:hover{
+    opacity: 0.5;
+}
+.btn:active {
+    background-color: #3b404c;
+    -webkit-box-shadow: 0 0 4px 0 #fff;
+            box-shadow: 0 0 4px 0 #fff;
+}
