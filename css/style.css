@@ -6,7 +6,6 @@ body {
 
 body {
     font-family: OpenSans, Arial, sans-serif;
-    background-color: #3b404c; 
 }
 
 .container {
@@ -116,4 +115,103 @@ img {
     background-color: #3b404c;
     -webkit-box-shadow: 0 0 4px 0 #fff;
             box-shadow: 0 0 4px 0 #fff;
+}
+.services {
+    padding: 30px 0 75px;
+}
+.section-title {
+    font-family: Lora, 'Times New Roman', serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0 100px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    width: 146px;
+    height: 4px;
+    background-color: #00a5ff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -73px;
+}
+.service-title {
+    color: #3a3f4b;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+.service-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 1px;
+    background-color: #3a3f4b;
+}
+.services-box {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+.service-item {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: calc(25% - 30px);
+    position: relative;
+    margin-right: 40px;
+}
+.service-item:last-child {
+    margin-right: 0;
+}
+.service-item a::before {
+    content:'';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 50%;
+    margin-left: -40px;
+    border-radius: 50%;
+}
+.service-item .logo-design::before {
+    background: #f5f6f8 url(../img/logo_design.png) no-repeat 50% 50%;
+}
+.service-item .web-design::before {
+    background: #f5f6f8 url(../img/web-design.png) no-repeat 50% 50%;
+}
+.service-item .branding::before {
+    background: #f5f6f8 url(../img/branding.png) no-repeat 50% 50%;
+}
+.service-item .illustrate::before {
+    background: #f5f6f8 url(../img/illustrations.png) no-repeat 50% 50%;
+}
+.services-box a {
+    text-decoration: none;
+    padding-top: 95px;
+    display: block;
+}
+.services-box .info {
+    color: #999999;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    margin: 20px 0;
 }
