@@ -272,6 +272,9 @@ img {
     text-transform: uppercase;
     color: inherit;
 }
+.category-filters a:hover {
+    color: #00a5ff;
+}
 
 .category-filters .active {
     color: #00a5ff;
