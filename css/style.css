@@ -336,6 +336,15 @@ img {
     text-decoration: none;
     color: inherit;
 }
+.category a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    -webkit-text-decoration-color: #00a5ff;
+            text-decoration-color: #00a5ff;
+}
+.category a:active {
+    color: #00a5ff;
 
 .portfolio-btn {
     -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
@@ -370,4 +379,4 @@ img {
 }
 .brands-box a:hover {
     opacity: 1;
-}
+}}
