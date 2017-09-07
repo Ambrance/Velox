@@ -15,11 +15,29 @@ body {
     box-sizing: border-box;
     outline: 1px solid #000;
 }
-
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
 img {
     max-width: 100%;
     height: auto;
 }
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
 
 .page-header {
     background: #3b404c url("../img/bg.jpg") no-repeat;
@@ -534,4 +552,82 @@ img {
 {
     opacity: 1;
     z-index: 3;
+}
+.contacts {
+    padding-top: 75px;
+    background-color: #3b404c;
+    color: #fff;
+}
+.footer-top {
+    display: table;
+    width: 100%;
+}
+.contacts-title {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Lora, Arial, sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    text-align: left;
+}
+.footer-menu {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.footer-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-menu li:last-child {
+    margin-right: 0;
+}
+.footer-menu a {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 43px;
+    text-decoration: none;
+    color: inherit;
+}
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+.footer-btm {
+    margin-top: 105px;
+}
+.contacts-info {
+    float: left;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contacts-item .info-title {
+    margin: 0;
+    text-transform: uppercase;
+}
+.contacts-item p {
+    color: #999;
+}
+.contacts-item a {
+    color: inherit;
+}
+.message-form {
+    float: right;
+}
+.form-item {
+    display: inline-block;
+}
+.whole-width {
+    display: block;
+}
+.form-field {
+    background-color: transparent;
 }
