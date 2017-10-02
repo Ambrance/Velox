@@ -462,7 +462,6 @@ img {
 .reviews-slider .right-controls,
 .reviews-slider .left-controls {
     position: absolute;
-    outline: 1px solid #000;
     top: 50%;
     width: 17px;
     height: 32px;
@@ -595,7 +594,6 @@ img {
 }
 .contacts-info {
     float: left;
-    margin-right: 92px;
     font-style: normal;
 }
 .contacts-info ul {
@@ -626,7 +624,7 @@ img {
     text-decoration: none;
 }
 .message-form {
-    float: left;
+    float: right;
     width: 770px;
 }
 .form-item {
